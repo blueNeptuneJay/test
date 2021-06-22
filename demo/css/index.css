@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#header{
+    width: 100%;
+    height: 20px;
+    background-color: black;
+}
+#header li{
+    height: 20px;
+    margin-right: 10px;
+    margin-right: 10px;
+    float: right;
+    /* 删除li前面的点 */
+    list-style: none;
+}
+#nav{
+    width: 100%;
+    height: 70px;
+    /* float: left; */
+    border-top: solid ;
+    border-top-color:rgb(175, 169, 169);
+    border-bottom: solid;
+    border-bottom-color: darkgray;
+    border-width: 1px;
+}
+#nav_left{
+    float: left;
+}
+#nav_center{
+    width: 25em;
+    height: 2em;
+    padding-top: 1em;
+    margin-right: 0;
+    display: inline-block;
+}
+#nav_center li{
+    float:left;
+    list-style: none;
+    padding: 1em;
+}
+#nav_right{
+    width: 10em;
+    height: 2em;
+    float: right;
+    padding-top: 1em;
+}
+#nav_right li{
+    float:left;
+    list-style: none;
+    padding: 1em;
+    
+}
+
+#banner{
+    width: 100%;
+    height: 60%;
+    background-color: #F5F5F5;
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    position: relative;
+    z-index: 1;
+}
+#banner_slide_left{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    float: left;
+    position: relative;
+    z-index: 2;
+    margin-top: -20%;
+}
+#banner_slide_right{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    float: right;
+    position: relative;
+    z-index: 2;
+    margin-top: -20%;
+}
+#center_information{
+    width:5em;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-bottom:5px solid red;
+    /* text-decoration: underline;
+    text-decoration-color: red; */
+    font-size: 2em; 
+    font-weight: 700;
+}
+#center_container{
+    width:100%;
+    height:70em;
+    margin: 0 auto;
+}
+.line_container{
+    width:70em;
+    height: 20em;
+    margin: 0 auto;
+}
+.big_pic{
+    width: 35em;
+    height: 20em;
+    float: left;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.big_pic img{
+    width: 100%;
+    height: 100%;
+    /* 设置图片的格式为填充 */
+    object-fit:cover;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.big_pic img:hover{
+    transform: scale(1.05);
+}
+.middle_pic{
+    width: 25em;
+    height: 20em;
+    float: left;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.middle_pic img{
+    width: 100%;
+    height: 100%;
+    /* 设置图片的格式为填充 */
+    object-fit:cover;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.middle_pic img:hover{
+    transform: scale(1.05);
+}
+.small_pic{
+    width: 20em;
+    height: 20em;
+    float: left;
+    margin-left: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+.small_pic img{
+    width: 100%;
+    height: 100%;
+    /* 设置图片的格式为填充 */
+    object-fit:cover;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.small_pic img:hover{
+    transform: scale(1.05);
+}
+#footer{
+    width: 100%;
+    height:15em;
+    background-color:rgb(232, 234, 238);
+}
+#footer_container{
+    width:50em;
+    height: 100%;
+    margin: 0 auto;
+}
+.list_container{
+    width: 10em;
+    height: 100%;
+    float:left;
+}
+.list_container h2{
+    font-weight: 300;
+    font-family: "微软雅黑";
+}
+.list_container p{
+    font-family: "微软雅黑";
+    font-weight: 200;
+    font-size: small;
+}
+#ending{
+    width: 100%;
+    height: 3em;
+    background-color: rgb(215, 217, 221);
+}
+#ending_container{
+    width:48em;
+    height:50%;
+    margin: 0 auto;
+}
+#ending_container li{
+    font-family: "微软雅黑";
+    font-weight: 200;
+    font-size: small;
+    float: left;
+    list-style: none;
+}
+#ending_date{
+    width: 10em;
+    height: 50%;
+    font-family: "微软雅黑";
+    font-weight: 200;
+    font-size: small;
+    margin: 0 auto;
+}

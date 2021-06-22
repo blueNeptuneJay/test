@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/nowtime.js"></script>
+    <style>
+        /* 对标签进行布局管理 */
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <li><a href="" style="color: azure;">关于EC</a>&or;&nbsp;&nbsp;</li>
+    </div>
+    <!-- 导航栏部分 -->
+    <div id="nav">
+        <div id="nav_left">
+            <a href="index.html">
+                <img src="img/catlogo.jpg" alt="" style="width: 25%;height: 25%;margin-left: 3em;">
+            </a>
+        </div>
+        <div id="nav_right">
+            <li>联系我们</li>
+            <li>帮助</li>
+        </div>
+    </div>
+    <div id="center_container">
+        <div id="line_container">
+            <form id="form_container" action="#" method="get">
+                <label style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOG&nbsp;IN</label>
+                <br><br>
+                <input id="username" type="text" placeholder="请输入11位电话号码" name="username">
+                <p style="color: red;"></p>
+                <br><br>
+                <input id="password" type="password" placeholder="请输入密码" name="password">
+                <p style="color: red;"></p>
+                <br>
+                <input type="checkbox">
+                记住我
+                <br>
+                <form name="myForm" action="buy.html" onsubmit="return loginJudge();" method="post">
+                    <button id="button_style" onclick="loginJudge() ">登录</button>
+                </form>
+            </form>    
+            <div style="text-align: center; margin: 0 auto;">
+                <a href="register.html" style=" color: blue;">立即注册>></a>
+            </div>
+        </div>
+    </div>
+    <!-- 最后的一小条的ending -->
+    <div id="ending">
+        <div id="ending_container">
+            <li>©2021&nbsp;EC技术有限公司&nbsp;&nbsp;</li>
+            <li>粤A2-20044005号&nbsp;粤公网安备&nbsp;&nbsp;44030702002388号&nbsp;&nbsp;</li>
+            <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li>&nbsp;&nbsp;联系我们&nbsp;&nbsp;</li>
+            <li>&nbsp;&nbsp;法律声明&nbsp;&nbsp;</li>
+            <li>&nbsp;&nbsp;隐私保护&nbsp;&nbsp;</li>
+            <li>&nbsp;除名查询</li>
+        </div>
+        <div id="ending_date">
+            <script>
+                setInterval("document.getElementById('ending_date').innerHTML=nowTime()", 1000);
+            </script>
+        </div>
+    </div>
+</body>
+</html>
